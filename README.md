@@ -40,9 +40,9 @@ $ npm install -g pm2
 ```
 
 - Na pasta do Sistema de Sensoreamento:
-    -- Execute o WAPP (PostgreSQL)
-    -- Através de seu editor de banco de dados (que não pode ser o Workbench), crie um banco de dados chamado "sensoreamento"
-    -- Procure pelo arquivo "knexfile.js" e altere:
+    - Execute o WAPP (PostgreSQL)
+    - Através de seu editor de banco de dados (que não pode ser o Workbench), crie um banco de dados chamado "sensoreamento"
+    - Procure pelo arquivo "knexfile.js" e altere:
 ```js
 //...
       development: {
