@@ -1,0 +1,15 @@
+{
+    "production": {},
+    "development": {
+        "db": {
+            "client": "pg",
+            "connection": {
+                "host": "localhost",
+                "database": "sensoreamento",
+                "user": "postgres",
+                "password":"123456",
+                "port": 5432
+            }
+        }
+    }
+}

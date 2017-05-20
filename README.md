@@ -30,7 +30,7 @@ Sistema composto de backend + API construídos para o minicurso "API's RESTful c
     - Sistema de Sensoreamento - Sistema fictício que lê sensores/leituras de dispositivos e armazena num banco de dados.
     - API de Sensoreamento - API que fomos incumbidos de criar para que os dados possam ser acessados de qualquer plataforma (Mobile, Web, Desktop, outros sistemas, dispostivos IoT, etc).
     
-## Instruções
+## Instruções (sempre na pasta raiz de cada projeto)
 - Gerais:
 - Instale os módulos globais:
 ```js

@@ -1,0 +1,19 @@
+{
+  "name": "sistema-sensoreamento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.13.0",
+    "lodash": "^4.17.4",
+    "moment-timezone": "^0.5.13",
+    "mysql": "^2.13.0",
+    "node-schedule": "^1.2.1",
+    "pg": "^6.1.5"
+  }
+}
