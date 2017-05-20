@@ -15,24 +15,24 @@ Sistema composto de backend + API construídos para o minicurso "API's RESTful c
 
 
 ### Pré-requisitos
-[NodeJS](www.nodejs.org) - 4x ou superior
-[PostgreSQL](https://www.postgresql.org) - 9.4 ou superior
-	* O [WAPP Stack do Bitnami](https://bitnami.com/stack/wapp) é uma excelente e fácil opção para Apache + PostgreSQL caso já não tenha o Apache instalado.
+- [NodeJS](www.nodejs.org) - 4x ou superior
+- [PostgreSQL](https://www.postgresql.org) - 9.4 ou superior
+	- * O [WAPP Stack do Bitnami](https://bitnami.com/stack/wapp) é uma excelente e fácil opção para Apache + PostgreSQL caso já não tenha o Apache instalado.
 
 ### Global modules
-[Knex](www.knexjs.org) - 0.12.x
-[Express Generator](http://expressjs.com/pt-br/starter/generator.html) - 0.12.x
-[PM2](http://pm2.keymetrics.io) - 2.4x (OPCIONAL)
+- [Knex](www.knexjs.org) - 0.12.x
+- [Express Generator](http://expressjs.com/pt-br/starter/generator.html) - 0.12.x
+- [PM2](http://pm2.keymetrics.io) - 2.4x (OPCIONAL)
 
 ## Composição
-- o ecossistema da nossa API é composta por **DOIS** sistemas: um que gera as leituras de sensor e a outra que, que é a API RESTful:
+- o ecossistema da nossa API é composta por **DOIS** sistemas: um que gera as leituras de sensor e a outra que, que é a API RESTful.
 
-    -- Sistema de Sensoreamento - Sistema fictício que lê sensores/leituras de dispositivos e armazena num banco de dados.
-    -- API de Sensoreamento - API que fomos incumbidos de criar para que os dados possam ser acessados de qualquer plataforma (Mobile, Web, Desktop, outros sistemas, dispostivos IoT, etc).
+    - Sistema de Sensoreamento - Sistema fictício que lê sensores/leituras de dispositivos e armazena num banco de dados.
+    - API de Sensoreamento - API que fomos incumbidos de criar para que os dados possam ser acessados de qualquer plataforma (Mobile, Web, Desktop, outros sistemas, dispostivos IoT, etc).
     
 ## Instruções
 - Gerais:
--- Instale os módulos globais:
+- Instale os módulos globais:
 ```js
 $ npm install -g knex
 $ npm install -g express-generator
@@ -56,22 +56,22 @@ $ npm install -g pm2
    },
 //..
 ```
--- Insira as mesmas configurações no arquivo /bd/KnexConfig.js
-   -- Instale todas as dependências do NodeJS (necessária conexão com a Internet):
+- Insira as mesmas configurações no arquivo /bd/KnexConfig.js
+   - Instale todas as dependências do NodeJS (necessária conexão com a Internet):
     
 ```sh    
     $ npm install
 ```
-   -- Execute a migration (criação das tabelas e alimentação mínima do sistema):
+   - Execute a migration (criação das tabelas e alimentação mínima do sistema):
     
 ```sh    
     $ knex migrate:latest
 ```
-   -- Execute a aplicação no terminal:
+   - Execute a aplicação no terminal:
 ```sh    
     $ node app.js
 ```
-   -- OU execute em background:
+   - OU execute em background:
    
 ```sh    
     $ pm2 start sensoreamento.config.js
@@ -84,7 +84,7 @@ $ npm install -g pm2
     $ npm install
 ```
 
--- Execute o projeto:
+- Execute o projeto:
 ```sh    
     $ npm start
 ```
@@ -99,7 +99,7 @@ $ npm install -g pm2
 Lembre-se que não temos VIEW nesse caso, por se tratar de uma API, em que a VIEW é parte externa.
 
 ## Dúvidas, sugestões, contribuições
--- Abra um pull request, estou a disposição!
+- Abra um pull request, estou a disposição!
 
 ## License
 MIT
